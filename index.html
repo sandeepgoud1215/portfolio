@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Yelikatte | Data Analyst & AI Automation Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#4F46E5',secondary:'#6366F1'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+   
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Pacifico'] text-gray-800">Sandeep</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-primary font-medium">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-primary font-medium">About</a>
+                <a href="#experience" class="nav-link text-gray-700 hover:text-primary font-medium">Experience</a>
+                <a href="#projects" class="nav-link text-gray-700 hover:text-primary font-medium">Projects</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-primary font-medium">Contact</a>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <!-- Theme Toggle -->
+                <!-- <div class="custom-switch" id="themeToggle">
+                    <div class="custom-switch-track"></div>
+                    <div class="custom-switch-thumb"></div>
+                </div> -->
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                    <i class="ri-menu-line ri-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute top-full left-0 right-0">
+            <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                <a href="#home" class="text-gray-700 hover:text-primary font-medium py-2">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary font-medium py-2">About</a>
+                <a href="#experience" class="text-gray-700 hover:text-primary font-medium py-2">Experience</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary font-medium py-2">Projects</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary font-medium py-2">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 md:pt-0 relative min-h-screen flex items-center" style="background-image: url('https://readdy.ai/api/search-image?query=A%20professional%20and%20modern%20illustration%20in%20Studio%20Ghibli%20style%20showing%20a%20data%20analyst%20workspace%20with%20soft%20pastel%20colors.%20The%20image%20should%20have%20a%20clean%20white%20background%20on%20the%20left%20side%20for%20text%2C%20and%20the%20right%20side%20showing%20a%20stylized%20desk%20with%20computer%2C%20charts%2C%20and%20data%20visualization%20elements.%20The%20illustration%20should%20be%20dreamy%20and%20whimsical%20but%20still%20professional%2C%20with%20soft%20lighting%20and%20gentle%20colors.&width=1920&height=1080&seq=1&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+        <div class="container mx-auto px-4 z-10 w-full">
+            <div class="max-w-2xl">
+                <p class="text-primary font-medium mb-2">Hello, I'm</p>
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 font-poppins">Sandeep Yelikatte</h1>
+                <h2 class="text-xl md:text-2xl text-gray-700 mb-6">Data Analyst & AI Automation Specialist</h2>
+                <p class="text-gray-600 mb-8 text-lg">Based in Hyderabad, India. Transforming data into actionable insights and building intelligent automation solutions.</p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition-all shadow-md hover:shadow-lg whitespace-nowrap">Get in Touch</a>
+                    <a href="./sandeep-resume.pdf" download="sandeep-resume.pdf" class="border border-gray-300 text-gray-700 px-6 py-3 rounded-button font-medium hover:border-primary hover:text-primary transition-all whitespace-nowrap flex items-center gap-2">
+                        <i class="ri-download-line"></i> Download Resume
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://github.com/sandeepgoud1215" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href=" https://www.linkedin.com/in/ysg05/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="mailto: sandeepyelikatte@gmail.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-700 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">About Me</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <img src="./images/sandeep-profile.jpeg" alt="Sandeep Yelikatte" class="w-full h-full object-cover object-top">
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Who I Am</h3>
+                    <p class="text-gray-700 mb-6">I'm a passionate Data Analyst and AI Automation Specialist with a B.Tech in Computer Science from SR International Institute of Technology, Hyderabad (2024). I specialize in transforming complex data into actionable insights and building intelligent automation solutions that solve real-world problems.</p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Education</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex justify-between">
+                                <h4 class="font-semibold text-gray-900">B.Tech – Computer Science</h4>
+                                <span class="text-gray-500 text-sm">2020–2024</span>
+                            </div>
+                            <p class="text-gray-600">SR International Institute of Technology, Hyderabad</p>
+                        </div>
+                        
+                        <div class="border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex justify-between">
+                                <h4 class="font-semibold text-gray-900">SR Junior College</h4>
+                                <span class="text-gray-500 text-sm">2018–2020</span>
+                            </div>
+                            <p class="text-gray-600">Hyderabad</p>
+                        </div>
+                        
+                        <div class="border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
+                            <div class="flex justify-between">
+                                <h4 class="font-semibold text-gray-900">Pragathi Vidyaniketan School</h4>
+                                <span class="text-gray-500 text-sm">2017–2018</span>
+                            </div>
+                            <p class="text-gray-600">Hyderabad</p>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Skills</h3>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Python</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">SQL</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Power BI</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Excel</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Pandas</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Machine Learning</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Generative AI</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">OpenAI API</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">SpaCy</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Hugging Face</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Automation</span>
+                        <span class="skill-tag bg-indigo-50 text-primary px-4 py-2 rounded-full text-sm font-medium">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">Work Experience</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="relative pl-10 space-y-12">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item relative">
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-900">Freelance AI Analyst</h3>
+                                    <p class="text-primary font-medium">CareerinFrance</p>
+                                </div>
+                                <span class="text-gray-500 text-sm whitespace-nowrap">May 2024 – Present</span>
+                            </div>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Developed an AI-powered chatbot for immigration queries, reducing support tickets by 40%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Built CRM automation workflows that increased lead conversion rates by 30%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Created a visa tracking system with automated status updates and notifications</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 2 -->
+                    <div class="timeline-item relative">
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-900">Data Analyst</h3>
+                                    <p class="text-primary font-medium">Mindbrowser Inc</p>
+                                </div>
+                                <span class="text-gray-500 text-sm whitespace-nowrap">Dec 2024 – Feb 2025</span>
+                            </div>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Developed healthcare analytics dashboards for US-based clients using Power BI</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Automated reporting processes, saving 15+ hours of manual work weekly</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Performed data cleansing and transformation using Python and SQL</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience 3 -->
+                    <div class="timeline-item relative">
+                        <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <h3 class="text-xl font-semibold text-gray-900">Data Science Intern</h3>
+                                    <p class="text-primary font-medium">Innomatics Research Lab</p>
+                                </div>
+                                <span class="text-gray-500 text-sm whitespace-nowrap">Feb – May 2023</span>
+                            </div>
+                            <ul class="text-gray-700 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Built machine learning models for customer segmentation and churn prediction</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Performed exploratory data analysis on retail datasets to identify sales patterns</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="ri-check-line text-primary mt-1 mr-2"></i>
+                                    <span>Created data visualizations using Matplotlib, Seaborn, and Plotly</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">Projects</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">A showcase of my technical skills and problem-solving abilities through various data and AI projects.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20and%20clean%20illustration%20of%20a%20smart%20AI%20resume%20assistant%20with%20a%20digital%20document%20and%20a%20robot%20or%20AI%20helper%20analyzing%20a%20resume.%20The%20image%20should%20show%20data%20extraction%2C%20skill%20matching%2C%20and%20resume%20scoring%20visualized%20through%20charts%20and%20highlights.%20Use%20a%20professional%20color%20palette%20with%20blue%20and%20purple%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20minimalist%20and%20professional.&width=600&height=400&seq=3&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="https://resume-genai-bot-nj6yjheqp5xapmzj7pg33o.streamlit.app/" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Smart Resume Q&A Bot</h3>
+                        <p class="text-gray-600 mb-4">A GenAI-powered bot that extracts skills from resumes, answers job-related questions, and provides resume scoring.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">OpenAI API</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">LangChain</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Flask</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20clean%20and%20modern%20illustration%20of%20a%20natural%20language%20processing%20analyzer%20with%20text%20being%20processed%20through%20sentiment%20analysis%20and%20named%20entity%20recognition.%20The%20image%20should%20show%20text%20fragments%20being%20categorized%20with%20sentiment%20indicators%20%28positive%2Fnegative%29%20and%20entities%20being%20highlighted%20and%20classified.%20Use%20a%20professional%20color%20palette%20with%20blue%20and%20green%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20digital%20and%20professional.&width=600&height=400&seq=4&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="https://github.com/sandeepgoud1215/smart-nlp-analyzer" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Smart NLP Analyzer</h3>
+                        <p class="text-gray-600 mb-4">A text analysis tool that performs sentiment analysis and named entity recognition using SpaCy and Transformers.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">SpaCy</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Transformers</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <!-- <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20professional%20illustration%20of%20an%20AI%20automation%20suite%20with%20connected%20components%20including%20a%20chatbot%20interface%2C%20CRM%20dashboard%2C%20and%20visa%20tracking%20system.%20The%20image%20should%20show%20workflow%20automation%20with%20data%20flowing%20between%20systems.%20Use%20a%20professional%20color%20palette%20with%20purple%20and%20blue%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20clean%2C%20modern%20and%20business-oriented.&width=600&height=400&seq=5&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="#" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">AI Automation Suite</h3>
+                        <p class="text-gray-600 mb-4">An integrated solution featuring a chatbot, CRM automation, and visa tracking tools for immigration services.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Django</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">OpenAI API</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20clean%20and%20professional%20illustration%20of%20a%20loan%20prediction%20system%20with%20data%20points%20being%20analyzed%20through%20machine%20learning%20algorithms.%20The%20image%20should%20show%20financial%20data%2C%20approval%20indicators%2C%20and%20prediction%20visualization.%20Use%20a%20professional%20color%20palette%20with%20blue%20and%20green%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20business-oriented%20and%20analytical.&width=600&height=400&seq=6&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="https://github.com/sandeepgoud1215/bank-marketing-project" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Loan Prediction</h3>
+                        <p class="text-gray-600 mb-4">A machine learning model that predicts loan approval based on applicant data, with feature importance analysis.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Scikit-learn</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Pandas</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Matplotlib</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20modern%20illustration%20of%20a%20music%20store%20database%20analysis%20system%20with%20SQL%20queries%2C%20sales%20charts%2C%20and%20inventory%20tracking.%20The%20image%20should%20show%20database%20tables%2C%20music-related%20icons%2C%20and%20business%20analytics.%20Use%20a%20professional%20color%20palette%20with%20blue%20and%20purple%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20clean%20and%20data-focused.&width=600&height=400&seq=7&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="https://github.com/sandeepgoud1215/Sql_Music_store_Project" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">SQL Music Store</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive SQL project analyzing sales data, customer behavior, and inventory management for a music store.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">SQL</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">PostgreSQL</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Power BI</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 h-full">
+                    <div class="h-48 bg-gray-100 relative">
+                        <div style="background-image: url('https://readdy.ai/api/search-image?query=A%20clean%20illustration%20of%20a%20web%20scraping%20system%20for%20e-commerce%20product%20data%20with%20Flipkart%20interface%20elements%2C%20data%20extraction%20visualization%2C%20and%20structured%20results.%20The%20image%20should%20show%20the%20process%20of%20scraping%2C%20organizing%2C%20and%20analyzing%20product%20information.%20Use%20a%20professional%20color%20palette%20with%20blue%20and%20green%20accents%20on%20a%20light%20background.%20The%20style%20should%20be%20digital%20and%20technical.&width=600&height=400&seq=8&orientation=landscape'); background-size: cover; background-position: center;" class="absolute inset-0"></div>
+                        <div class="project-overlay absolute inset-0 bg-primary/80 flex items-center justify-center">
+                            <a href="https://github.com/sandeepgoud1215/WebScraping-Project-Using-Python" class="bg-white text-primary px-6 py-2 rounded-button font-medium hover:bg-gray-100 transition-all whitespace-nowrap">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Flipkart Scraper</h3>
+                        <p class="text-gray-600 mb-4">A web scraping tool that extracts product information, prices, and reviews from Flipkart using BeautifulSoup.</p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Python</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">BeautifulSoup</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Pandas</span>
+                            <span class="bg-indigo-50 text-primary px-3 py-1 rounded-full text-xs font-medium">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">Skills & Tools</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">My technical expertise and tools I use to solve complex data and automation challenges.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-14 h-14 flex items-center justify-center bg-indigo-50 text-primary rounded-lg mb-4">
+                        <i class="ri-code-s-slash-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Programming</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Python</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">SQL</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">JavaScript</span>
+                                <span class="text-gray-500">75%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Data Analysis -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-14 h-14 flex items-center justify-center bg-indigo-50 text-primary rounded-lg mb-4">
+                        <i class="ri-bar-chart-2-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Data Analysis</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Pandas</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Power BI</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Excel</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI/ML -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-14 h-14 flex items-center justify-center bg-indigo-50 text-primary rounded-lg mb-4">
+                        <i class="ri-brain-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">AI/ML</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Machine Learning</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Generative AI</span>
+                                <span class="text-gray-500">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">NLP</span>
+                                <span class="text-gray-500">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100">
+                    <div class="w-14 h-14 flex items-center justify-center bg-indigo-50 text-primary rounded-lg mb-4">
+                        <i class="ri-tools-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Tools</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Git</span>
+                                <span class="text-gray-500">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Docker</span>
+                                <span class="text-gray-500">70%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div> -->
+                        
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">VS Code</span>
+                                <span class="text-gray-500">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-primary rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-poppins">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Have a project in mind or want to discuss potential opportunities? Feel free to reach out!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Send Me a Message</h3>
+                    <form id="contactForm" name="submit-to-google-sheet">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input name="name" type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 text-gray-700" placeholder="Your name">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input name="email" type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 text-gray-700" placeholder="Your email">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input name="subject" type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 text-gray-700" placeholder="Subject">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea name="message" id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded focus:ring-2 focus:ring-primary/20 text-gray-700" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-primary/90 transition-all shadow-md hover:shadow-lg whitespace-nowrap w-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="flex flex-col justify-between">
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 mb-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-indigo-50 text-primary rounded-full mr-4">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-1">Email</h4>
+                                    <a href="mailto:sandeepyelikatte@gmail.com" class="text-gray-600 hover:text-primary">sandeepyelikatte@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-indigo-50 text-primary rounded-full mr-4">
+                                    <i class="ri-github-fill"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-1">GitHub</h4>
+                                    <a href="https://github.com/sandeepgoud1215" target="_blank" class="text-gray-600 hover:text-primary">github.com/sandeepgoud1215</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-indigo-50 text-primary rounded-full mr-4">
+                                    <i class="ri-linkedin-fill"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-1">LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/ysg05/" target="_blank" class="text-gray-600 hover:text-primary">linkedin.com/in/sandeepyelikatte</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 flex items-center justify-center bg-indigo-50 text-primary rounded-full mr-4">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900 mb-1">Location</h4>
+                                    <p class="text-gray-600">Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Availability</h3>
+                        <p class="text-gray-600 mb-4">I'm currently available for freelance work and full-time opportunities in Data Analysis and AI Automation.</p>
+                        <div class="flex items-center text-gray-700">
+                            <div class="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+                            <span>Available for new projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white">Sandeep</a>
+                    <p class="text-gray-400 mt-2">Data Analyst & AI Automation Specialist</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-4 mb-6 md:mb-0">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="#experience" class="text-gray-400 hover:text-white transition-colors">Experience</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="https://github.com/sandeepgoud1215" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-github-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ysg05/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="mailto:sandeepyelikatte@gmail.com" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-primary hover:text-white transition-all">
+                        <i class="ri-mail-fill"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 Sandeep Yelikatte. All rights reserved.</p>
+                <p class="text-gray-400 text-sm mt-2 md:mt-0">Last updated: May 27, 2025</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all z-50">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script id="navigationScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                
+                if (mobileMenu.classList.contains('hidden')) {
+                    mobileMenuBtn.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+                } else {
+                    mobileMenuBtn.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+                }
+            });
+            
+            // Close mobile menu when clicking on a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuBtn.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+                });
+            });
+            
+            // Active link highlighting
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', function() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script id="themeToggleScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('themeToggle');
+            
+            themeToggle.addEventListener('click', function() {
+                themeToggle.classList.toggle('active');
+                
+                // Here you would implement actual dark/light mode toggle
+                // For this demo, we're just toggling the class
+            });
+        });
+    </script>
+
+    <script id="backToTopScript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+ 
+<script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbwEeE7L0pQ5vK88omX6HCVLtQqRNQ-HENr6nFtrvFNxLj5OSc1-VhZSSL4aSKdxvO0/exec";
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(() => {
+      alert('Success! Your message was sent.');
+      form.reset(); // Optional: clear the form
+    })
+    .catch(error => {
+      alert('Try Again: ' + error.message);
+    });
+  });
+</script>
+
+</body>
+</html>
